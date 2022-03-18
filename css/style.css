@@ -1,0 +1,43 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; }
+
+.main {
+  height: auto;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.534);
+  justify-content: center; }
+  .main .turnero {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white; }
+    .main .turnero .primerTurnero {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 30px; }
+  .main .fecha {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    align-self: center; }
+    .main .fecha .segundoTurnero {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 30px; }
+
+* {
+  margin: 0;
+  box-sizing: content-box;
+  font-family: Arial, Helvetica, sans-serif; }

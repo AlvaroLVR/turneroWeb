@@ -1,0 +1,43 @@
+@mixin form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px;
+}
+@mixin cont {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.main{
+    height: auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background:rgba(0, 0, 0, 0.534);
+    justify-content: center;
+    
+    .turnero{
+        @include cont;
+        .primerTurnero{
+           @include form;
+        }
+    }
+    .fecha{
+        @include cont;
+        align-self: center;
+        .segundoTurnero{
+            @include form;
+        }
+    }
+}
