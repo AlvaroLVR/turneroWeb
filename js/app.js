@@ -1,44 +1,27 @@
-// function tomaFecha(){
-// let dato6 = document.getElementById("dia").value;
-// let dato7 = document.getElementById("hora").value;
-
-// const j = [dato6,dato7]
-// console.log(j)
-// }
-
-// if (x == false) {
-//     console.log('es falso ')
-//     x  = true;
-// }else{
-//     console.log('es verdadero')
-//     x = false;
-// }
-let x = Boolean();
-
-function testigo(){
-    
+//declaracion de variables globales 
+let registroSocio = [] ; 
+let c = 0;
+// Crear una clase constructora para tomar los datos de los socios 
+class Socio{
+    constructor(nombre,apellido,dni,email,nSocio){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.email = email;
+        this.nSocio = nSocio;
+    }
 }
-
+// toma los datos del socio 
 function tomaDatos() {
+    c++; 
     let dato1 = document.getElementById("fname").value;
     let dato2 = document.getElementById("apellido").value;
     let dato3 = document.getElementById("dni").value;
     let dato4 = document.getElementById("email").value;
     let dato5 = document.getElementById("socio").value;
-    let allData = [ dato1 , dato2 , dato3 , dato4 , dato5 ];
+
+    let registroSocio = new  Socio( dato1 , dato2 , dato3 , dato4 , dato5 );
+    
+    alert(registroSocio.nombre +' tenes el turno '+ c)
 }
-
-switch (x) {
-    case true:
-        console.log('es verdadero');
-        X = false; 
-    break;
-
-    case false:
-        console.log('es falso');
-        x = true;
-    break;
-    default: console.log('esperando a que se ingresen los datos')
-}
-
 
